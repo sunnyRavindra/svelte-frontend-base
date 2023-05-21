@@ -1,3 +1,16 @@
+# Getting Started
+
+## Add basic svelte project to your repository.
+
+1. Add ProjectName variable specific to your project.
+```
+#!/bin/bash
+ProjectName=my-app
+git clone https://github.com/sunnyRavindra/svelte-frontend-base.git $ProjectName
+cd $ProjectName
+npm install
+```
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
