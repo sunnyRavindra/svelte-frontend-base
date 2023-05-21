@@ -6,9 +6,27 @@
 ```
 #!/bin/bash
 ProjectName=my-app
+Routes=(
+    "/about" 
+    "/contact" 
+    "/autoarch" 
+    )
+echo "Project Name : $ProjectName"
+echo "Routes : ${Routes[@]}"
+echo "cloning svelte-frontend-base git repo"
 git clone https://github.com/sunnyRavindra/svelte-frontend-base.git $ProjectName
+echo "moving to project"
 cd $ProjectName
+echo "preparing npm project"
 npm install
+```
+
+echo "adding routes"
+cd src/routes
+for route in ${Routes[@]}
+do
+  echo $route
+done
 ```
 
 # create-svelte
